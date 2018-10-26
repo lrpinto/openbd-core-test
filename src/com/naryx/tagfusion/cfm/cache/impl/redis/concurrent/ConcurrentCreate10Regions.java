@@ -51,11 +51,13 @@ public class ConcurrentCreate10Regions {
 
 						
 					} 
+					
 					// If the current thread is interrupted while waiting
 					catch (InterruptedException e) {
 						e.printStackTrace();
+						
+					// If an error occurred when creating a cache region
 					} catch (Exception e) {
-						// If an error occurred when creating a cache region
 						e.printStackTrace();
 					} 
 
